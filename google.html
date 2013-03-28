@@ -3,11 +3,21 @@
     <head>
         <title>Gizoogle</title>
         <style>
-            .blue_underlined {color:blue; text-decoration: underline;}
-            .blackbar {background-color: black; color: white; overflow: hidden;}
-            .blackbar ul{list-style-type: none; margin: 0; padding: 0; padding-left: 10px;}
-            .blackbar ul li{float: left; margin-right: 19px; }
-            
+            .blue_underlined {color:blue; text-decoration: underline; font-size: 20px;}
+            .blackbar {background-color: black; color: gray; overflow: hidden;}
+            .blackbar ul, .tabs ul{list-style-type: none; margin: 0; padding: 0px; }
+            .blackbar ul {padding-left: 10px;}
+            .blackbar ul li, .tabs ul li{float: left; margin-right: 19px; padding: 5px;}
+            body {font-family: sans-serif; margin: 0;}
+            .active {color: white;}
+            .tabs {overflow: hidden; border-bottom: 1px solid #e2e3e2; }
+            .tabs .active {color: red; border-bottom: 3px solid red;}
+            .results {color: #e2e3e2; padding: 5px; font-size: 12px; }
+            .didyou {padding: 5px;  }
+            .didyou span  {font-weight: bold; font-style: italic}
+            .page {padding-left: 160px}
+            .hyperlink {color: green}
+            .search-result {padding-top: 25px;}
         </style>
     </head>
 
@@ -15,18 +25,37 @@
         <div class="blackbar"> 
             <ul>
                 <li>+You</li> 
-                <li>Search</li> 
+                <li class="active">Search</li> 
                 <li>Images</li>
             </ul>
         </div>
-        <div> Web Images Maps </div>
-        <div> about niggers results </div>
-        <div>Did you mean: <span> <em><strong>Honolulu entropia</strong></em></span></div>
-        <Div class="blue_underlined">
-                  <h1>Thomas Hodgson en trio avec Louis Boucher et Guillaume Martin...</h1>
-        montreal.fuckingwebaddress
-        Deb 17 blah blah bla
-        blah blah blah</Div>
+        <div class="page">
+            <div class="tabs"> 
+                <ul>
+                    <li class="active">Web</li> 
+                    <li>Images</li> 
+                    <li>Maps</li>
+                </ul>
+            </div>
+            <div class="results"> About 9000 results </div>
+            <div class="Didyou">Did you mean: <span>Honolulu entropia</span></div>
+            <div class="search-result">
+                <Div class="blue_underlined">
+                      Thomas Hodgson en trio avec Louis Boucher et Guillaume Martin...
+                </Div>
+                <div class="hyperlink">montreal.fuckingwebaddress</div>
+                Deb 17 blah blah bla
+                blah blah blah 
+            </div>
+            <div class="search-result">
+                <Div class="blue_underlined">
+                      Thomas Hodgson en trio avec Louis Boucher et Guillaume Martin...
+                </Div>
+                <div class="hyperlink">montreal.fuckingwebaddress</div>
+                Deb 17 blah blah bla
+                blah blah blah
+            </div>
+        </div>
     </body>
 
 </html>
